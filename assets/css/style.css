@@ -222,11 +222,10 @@ section {
   }
   
   .logo-circle {
-    width: 45px;
-    height: 45px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid #ff0000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -851,6 +850,23 @@ section {
     font-size: 1.5rem;
 }
 
+.footer .logo-circle {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 .footer-bottom {
     text-align: center;
     margin-top: 3rem;
@@ -1452,5 +1468,479 @@ section {
   
   .community-right {
     padding: 3rem 2rem;
+  }
+}
+
+/* Programmes hero styles */
+.program-hero {
+  background-color: #f0f7ff;
+  background-image: url('https://www.transparenttextures.com/patterns/notebook-dark.png');
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.2) 100%);
+  z-index: 1;
+}
+
+.program-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.program-hero-left {
+  flex: 1;
+}
+
+.program-hero-left h1 {
+  font-size: 3.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  animation: slideInLeft 0.8s ease-out;
+  font-family: 'Dancing Script', cursive;
+}
+
+.program-hero-left p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  animation: bounceIn 1s ease-out;
+}
+
+.download-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+  background: #0056b3;
+}
+
+.program-hero-right {
+  flex: 1;
+  animation: slideInRight 0.8s ease-out;
+}
+
+.shape-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  clip-path: polygon(30% 0%, 100% 20%, 70% 100%, 0% 80%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+}
+
+.shape-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.shape-container:hover img {
+  transform: scale(1.2);
+}
+
+@keyframes slideInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.3);
+  }
+  50% {
+      opacity: 0.9;
+      transform: scale(1.1);
+  }
+  80% {
+      opacity: 1;
+      transform: scale(0.89);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .program-hero-container {
+      flex-direction: column;
+  }
+  
+  .program-hero-left h1 {
+      font-size: 2.5rem;
+  }
+  
+  .shape-container {
+      height: 400px;
+  }
+}
+
+/* Early years styles */
+.early-years {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.early-years-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.early-years-left {
+  flex: 1;
+}
+
+.early-years-left h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.early-years-left h3 {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.early-years-left p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.learn-more-btn {
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
+.early-years-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.age-box {
+  padding: 40px;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.age-box:hover {
+  transform: translateX(10px);
+}
+
+.box-primary {
+  background: #2196F3;
+}
+
+.box-secondary {
+  background: #FF5722;
+}
+
+.age-box h4 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.age-box p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.age-box .age-range {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .early-years-container {
+      flex-direction: column;
+  }
+  
+  .early-years-left h2 {
+      font-size: 2rem;
+  }
+  
+  .age-box {
+      padding: 30px;
+  }
+}
+
+/* Primary yers styles */
+.primary-years {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.primary-years-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.primary-years-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.primary-years-right {
+  flex: 1;
+}
+
+.primary-years-right h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.primary-years-right h3 {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.primary-years-right p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.primary-years .age-box {
+  padding: 40px;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.primary-years .age-box:hover {
+  transform: translateX(-10px);
+}
+
+.primary-years .box-primary {
+  background: #4CAF50;
+}
+
+.primary-years .box-secondary {
+  background: #9C27B0;
+}
+
+.primary-years .learn-more-btn {
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-years .learn-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(76,175,80,0.3);
+}
+
+@media (max-width: 768px) {
+  .primary-years-container {
+      flex-direction: column-reverse;
+  }
+  
+  .primary-years-right h2 {
+      font-size: 2rem;
+  }
+  
+  .primary-years .age-box {
+      padding: 30px;
+  }
+}
+
+/* Curriculum blend styles */
+.curriculum-blend {
+  position: relative;
+  min-height: 600px;
+}
+
+.curriculum-container {
+  display: flex;
+  height: 600px;
+  position: relative;
+  max-width: 100%;
+}
+
+.curriculum-left {
+  width: 50%;
+  background-image: url('https://img.freepik.com/free-vector/hand-drawn-childish-pattern_23-2149419879.jpg');
+  background-color: #f8d7da;
+  position: relative;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.curriculum-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.curriculum-right {
+  width: 50%;
+  position: relative;
+  height: 600px;
+}
+
+.curriculum-right img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  content: url('https://images.pexels.com/photos/4430308/pexels-photo-4430308.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.curriculum-right img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .curriculum-container {
+    flex-direction: column;
+  }
+  
+  .curriculum-left {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  
+  .curriculum-right {
+    width: 100%;
+    min-height: 400px;
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
   }
 }
