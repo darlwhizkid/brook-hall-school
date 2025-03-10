@@ -115,5 +115,13 @@ setTimeout(() => {
 }, 1000);
 });
 
+// Dropdown icon functionality
+document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
+  trigger.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      const dropdownContent = trigger.nextElementSibling;
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+  });
+});
 
 

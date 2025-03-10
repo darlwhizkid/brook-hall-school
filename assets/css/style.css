@@ -649,6 +649,7 @@ section {
     .programs-container {
         grid-template-columns: 1fr;
         padding: 1rem;
+        gap: 2rem;
     }
 
     .programs-left {
@@ -659,6 +660,7 @@ section {
     }
 
     .program-row {
+        width: 100%;
         margin-bottom: 1rem;
     }
 
@@ -675,6 +677,19 @@ section {
         display: flex;
         justify-content: center;
         margin-top: 2rem;
+    }
+
+    .program-row{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .program-header {
+        padding: 1rem;
+    }
+
+    .program-content {
+        padding: 1rem;
     }
 
     .custom-shape {
@@ -1927,21 +1942,86 @@ section {
 }
 
 @media (max-width: 768px) {
+  .program-hero-container{
+    flex-direction: column;
+  }
+
+  .program-hero-left h1{
+    font-size: 2.5rem;
+  }
+
+  .shape-container {
+    height: 400px;
+  }
+
+  .early-years-container{
+    flex-direction: column;
+  }
+  .early-years-left h2{
+    font-size: 2rem;
+  }
+
+  .age-box{
+    padding: 30px;
+  }
+
+  .primary-years-container {
+    flex-direction: column-reverse;
+  }
+  
+  .primary-years-right h2 {
+    font-size: 2rem;
+  }
+  
+  .primary-years .age-box {
+    padding: 30px;
+  }
+
+  .curriculum-blend {
+    margin-bottom: 0;
+    padding-bottom: 80px;
+  }
+
   .curriculum-container {
     flex-direction: column;
+    min-height: auto;
   }
   
   .curriculum-left {
     width: 100%;
-    padding: 40px 20px;
+    padding: 40px 20px 80px;
   }
   
   .curriculum-right {
     width: 100%;
-    min-height: 400px;
+    height: 400px;
+    position: relative;
+  }
+
+  text-content {
+    margin-bottom: 60px;
   }
   
   .text-content h2 {
     font-size: 2rem;
+  }
+
+  .curriculum-right img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* General spacing adjustments */
+  section {
+    margin-bottom: 10px;
+    margin-top: 80px;
+  }
+
+  /* Footer adjustments */
+  .footer {
+    position: relative;
+    margin-top: 10px;
   }
 }
