@@ -2025,3 +2025,446 @@ section {
     margin-top: 10px;
   }
 }
+
+/* Early years hero section */
+.early-years-hero {
+  background-color: #f8f9fa;
+  background-image: url('../images/children-pattern.png');
+  background-size: cover;
+  padding: 80px 0;
+  min-height: 600px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 60px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #2c3e50;
+  margin-bottom: 24px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #596575;
+  margin-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #2c3e50;
+  border: 2px solid #2c3e50;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.shape-frame {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  clip-path: polygon(10% 0, 100% 20%, 90% 100%, 0 80%);
+  overflow: hidden;
+}
+
+.shape-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 968px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .shape-frame {
+    max-width: 100%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .early-years-hero {
+    padding: 40px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .primary-btn, .secondary-btn {
+    width: 100%;
+  }
+
+  .shape-frame {
+    height: 250px;
+  }
+}
+
+/* Description of Early Years Program style */
+.split-section {
+  position: relative;
+  height: 600px;
+  display: flex;
+}
+
+.split {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left {
+  background: linear-gradient(to right, rgba(44, 62, 80, 0.9) 0%, rgba(44, 62, 80, 0.6) 100%);
+}
+
+.right {
+  background: linear-gradient(to left, rgba(231, 76, 60, 0.9) 0%, rgba(231, 76, 60, 0.6) 100%);
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+
+.left .overlay-image {
+  background-image: url('../images/creche.jpg');
+}
+
+.right .overlay-image {
+  background-image: url('../images/preschool.jpg');
+}
+
+.content {
+  position: relative;
+  padding: 60px;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.split-btn {
+  padding: 12px 32px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.split-btn:hover {
+  background: white;
+  color: #2c3e50;
+}
+
+@media screen and (max-width: 968px) {
+  .split-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .split {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .content {
+    padding: 30px;
+  }
+}
+
+/* Curriculum promise styles */
+.curriculum-section {
+  position: relative;
+  min-height: 300px;
+  background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png') fixed;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.curriculum-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.curriculum-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+}
+
+.curriculum-buttons {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 50%;
+  display: flex;
+  gap: 0;
+}
+
+.curr-btn {
+  width: 33.33%;
+  padding: 30px;
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  animation: slideDown 0.8s ease-out forwards;
+}
+
+.curr-btn:nth-child(1) {
+  border-bottom-left-radius: 50%;
+}
+
+.curr-btn:nth-child(2) {
+  background: #34495e;
+}
+
+.curr-btn:nth-child(3) {
+  background: #2980b9;
+}
+
+.curr-btn:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .curriculum-buttons {
+      position: relative;
+      top: 0;
+      width: 100%;
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .curr-btn {
+      width: 100%;
+  }
+}
+
+/* Environment styles */
+.environment-section {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bubble-shape {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23ffffff"/></svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.environment-content {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.environment-content h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.environment-text {
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.environment-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.expandable-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.expandable-left,
+.expandable-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.expandable-bar {
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bar-header {
+  padding: 15px 20px;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.toggle-btn .fa-minus {
+  display: none;
+}
+
+.bar-content {
+  padding: 20px;
+  display: none;
+}
+
+.expandable-bar.active .bar-content {
+  display: block;
+}
+
+.expandable-bar.active .fa-plus {
+  display: none;
+}
+
+.expandable-bar.active .fa-minus {
+  display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  .expandable-container {
+      flex-direction: column;
+  }
+  
+  .image-container {
+      height: 300px;
+  }
+  
+  .bubble-shape {
+      height: 50px;
+  }
+}
+
+
+
+
