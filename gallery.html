@@ -64,8 +64,8 @@
                 >Early Years<i class="fas fas fa-chevron-down"></i
               ></a>
               <div class="dropdown-content">
-                <a href="#vehicle-registration">Creche</a>
-                <a href="#document-renewal">PreSchool</a>
+                <a href="creche.html">Creche</a>
+                <a href="preschool.html">PreSchool</a>
               </div>
             </div>
             <a href="primary.html">Primary</a>
@@ -82,6 +82,86 @@
       </div>
     </nav>
     <!-- Navbar ends -->
-    <script src="assets/js/app.js"></script>
+    <!-- Gallery section begins here -->
+    <section class="gallery-container">
+      <div class="gallery-grid">
+        <!-- Images will be populated dynamically -->
+      </div>
+      <div class="pagination">
+        <button id="prevPage">&laquo; Previous</button>
+        <div id="pageNumbers"></div>
+        <button id="nextPage">Next &raquo;</button>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+    <!-- Gallery section ends here -->
+     <!-- Footer section begins -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <div class="logo-circle">
+              <img src="assets/images/logo.png" alt="CarLegit Logo" />
+            </div>
+            <h3>Brook Hall Schools</h3>
+          </div>
+          <p>Building a Solid Foundation for the future.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">About Us</a></li>
+            <li><a href="#services">Our Programmes</a></li>
+            <li><a href="#about">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#registration">Visit Learning Portal</a></li>
+            <li><a href="#renewal">After School Care</a></li>
+            <li><a href="#transfer">Get Uniform Price list</a></li>
+            <li><a href="#license">Get Admission Form</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <i class="fas fa-phone"></i><br />+234 803 787 0174<br />+234 802
+              977 5666
+            </li>
+            <li><i class="fas fa-envelope"></i>brookhall_schools@yahoo.com</li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i><br />14 Vina Estate,
+              Adjacent Forte Oil Petrol Station<br />Badore Ajah, Lekki
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Brook Hall Schools | Designed by
+          <a href="https://darlingtonodom-portfolio.vercel.app/">Darlculus</a>
+        </p>
+      </div>
+
+      <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </footer>
+    <!-- Footer section ends -->
+
+    <script src="assets/js/gallery.js"></script>
   </body>
 </html>
