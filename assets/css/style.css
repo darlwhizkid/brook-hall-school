@@ -2562,7 +2562,7 @@ section {
   font-family: 'Dancing Script', cursive;
 }
 
-.service-right p {
+.service-right, .service-left p {
   font-size: 1.2rem;
   line-height: 1.8;
 }
@@ -2586,6 +2586,109 @@ section {
       font-size: 3rem;
   }
 }
+
+/* Child engagement section */
+.activities-section {
+  padding: 4rem 2rem;
+  background-image: url('../images/bg8.png');
+}
+
+.activities-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.activities-header h2 {
+  color: #800020;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.activities-header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.activities-header p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activity-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.card-header {
+  background: #800020;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card-header i {
+  font-size: 2.5rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h4 {
+  color: #800020;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  line-height: 1.6;
+  color: #666;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add animation delay for each card */
+.activity-card:nth-child(1) { animation-delay: 0.1s; }
+.activity-card:nth-child(2) { animation-delay: 0.2s; }
+.activity-card:nth-child(3) { animation-delay: 0.3s; }
+.activity-card:nth-child(4) { animation-delay: 0.4s; }
+.activity-card:nth-child(5) { animation-delay: 0.5s; }
+.activity-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .activities-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .activities-header h3 {
+    font-size: 1.5rem;
+  }
+}
+
 
 
 /* Gallery.html styles */
