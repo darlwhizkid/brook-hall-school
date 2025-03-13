@@ -2701,6 +2701,113 @@ color: white;
   }
 }
 
+/* Learn By Doing Section for preschool.html */
+.learn-section {
+  background: url('../images/creche2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+}
+
+.learn-content {
+  width: 50%;
+  background-color: #800020;
+  color: white;
+  padding: 40px;
+  margin-left: 0;
+}
+
+.learn-content h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+/* Growth Priority Section */
+.growth-section {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url('../images/bg8.png');
+}
+
+.growth-content {
+  width: 80%;
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+.growth-content h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #800020;
+}
+
+/* Development Areas Section */
+.development-section {
+  display: flex;
+  padding: 80px 0;
+  background-image: url('../images/bg8.png');
+}
+
+.development-image {
+  flex: 1;
+}
+
+.development-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.development-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.development-content h2 {
+  color: #800020;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.development-content ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.development-content li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.development-content li:before {
+  content: "•";
+  color: #800020;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .learn-content {
+    width: 100%;
+  }
+  
+  .growth-content {
+    width: 95%;
+  }
+  
+  .development-section {
+    flex-direction: column;
+  }
+  
+  .development-image {
+    height: 300px;
+  }
+}
+
+
 
 
 /* Gallery.html styles */
